@@ -47,7 +47,7 @@ public class PaymentFragment extends android.app.Fragment {
 
         webView=(WebView)rootView.findViewById(R.id.web_view);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.facebook.com/");
+        webView.loadUrl("http://www.paymeapp.co/");
         webView.setFocusable(false);
 
         return rootView;

@@ -1,4 +1,4 @@
-package com.kamal.marcus.facebooklogin;
+package com.kamal.marcus.facebooklogin.Products;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.widget.ListView;
 
 import com.kamal.marcus.facebooklogin.Payment.PaymentActivity;
 import com.kamal.marcus.facebooklogin.Promotions.CardsAdapter;
+import com.kamal.marcus.facebooklogin.R;
 
 import static com.kamal.marcus.facebooklogin.MainActivity.ProductsCardsList;
 

@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 
 import com.kamal.marcus.facebooklogin.Merchants.MerchantsFragment;
+import com.kamal.marcus.facebooklogin.Products.ProductsFragment;
 import com.kamal.marcus.facebooklogin.Promotions.PromotionsFragment;
 
 import org.json.JSONException;
