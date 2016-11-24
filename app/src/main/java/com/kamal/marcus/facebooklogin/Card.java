@@ -10,12 +10,16 @@ import android.os.Parcelable;
 public class Card implements Parcelable {
     private String name;
     private String details;
-    private int icon;
+    private String imageUrl;
 
-    public Card(String name, String details, int icon){
-        this.name=name;
-        this.details=details;
-        this.icon=icon;
+    public Card(String name, String details, String imageUrl) {
+        this.name = name;
+        this.details = details;
+        this.setImageUrl(imageUrl);
+    }
+
+    public Card() {
+
     }
 
     public String getName() {
@@ -34,18 +38,19 @@ public class Card implements Parcelable {
         this.details = details;
     }
 
-    public int getIcon() {
-        return icon;
+
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setIcon(int icon) {
-        this.icon = icon;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     protected Card(Parcel in) {
         name = in.readString();
         details = in.readString();
-        icon = in.readInt();
+        imageUrl=in.readString();
     }
 
     @Override
@@ -57,7 +62,7 @@ public class Card implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(name);
         dest.writeString(details);
-        dest.writeInt(icon);
+        dest.writeString(imageUrl);
     }
 
     @SuppressWarnings("unused")
@@ -72,4 +77,6 @@ public class Card implements Parcelable {
             return new Card[size];
         }
     };
+
+
 }

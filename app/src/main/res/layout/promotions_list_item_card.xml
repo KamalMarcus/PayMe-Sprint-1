@@ -42,7 +42,9 @@
                 android:layout_height="wrap_content"
                 android:paddingRight="3dp"
                 android:id="@+id/card_details"
-                android:text="Buy your Netflix card and start streaming your favourite movies and TV series"/>
+                android:text="Buy your Netflix card and start streaming your favourite movies and TV series"
+                android:maxLines="2"
+                android:ellipsize="end"/>
 
         </LinearLayout>
 
